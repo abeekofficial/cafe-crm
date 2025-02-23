@@ -3,13 +3,13 @@ import * as ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import App from './App';
 import Layout from './layout/layout';
-import Home from './components/Home';
-import About from './components/About';
 import WebSocketComponent from './pages/Login';
+import { About, ErrorPage, Home } from './components';
 
 const router = createBrowserRouter([
   {
     Component: App,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',

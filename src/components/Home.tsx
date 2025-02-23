@@ -1,9 +1,9 @@
 
 
-export default function Home(){
-    return(
+export default function Home() {
+    return (
         <>
-        Bu asosiy sahifa
+            Bu asosiy sahifa
         </>
     )
 }
